@@ -429,7 +429,12 @@ div.servicios__icon img {
 .div-catalogo{
   margin-top: 7rem;
 }
-/* FOOTER */
+
+.title-items-catalogo{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+/* ============FOOTER Y NEWSLETTER============ */
 .footer__bg {
   background-image: url(../img/footer-bg.jpeg);
 }
