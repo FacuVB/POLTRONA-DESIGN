@@ -681,21 +681,21 @@ form #mce-success-response {
 /* MEDIA QUERY */
 @media only screen and (max-width: 600px) {
   .text1 {
-    top: 5px;
+    top: -12px;
     left: 20px;
-    font-size: 19px;
+    font-size: 31px;
   }
-
   .text2 {
-    top: 38px;
+    top: 18px;
     left: 32px;
-    font-size: 7px;
+    font-size: 14px;
   }
 
   .banner__container-link {
-    top: 72px;
-    left: 29px;
+    top: 78px;
+    left: 11px;
     font-size: 9px;
+    width: 29%;
   }
 }
 
