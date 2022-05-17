@@ -1,4 +1,6 @@
-/* ===========BODY============ */
+/* ==================BODY================= */
+
+
 body {
   background-color: #faf7f2;
   font-size: 16px;
@@ -40,7 +42,9 @@ body {
   background-color: #faf7f2;
 }
 
-/* ===========NAVBAR============ */
+
+/* ==================NAVBAR================= */
+
 
 .start-header {
 	opacity: 1;
@@ -230,7 +234,7 @@ color: #fff;
 background-color: rgba(182, 157, 120, 1);
 }
 
-/* ===========SLIDER============ */
+/* ==================SLIDER================= */
 
 .section-slider{
   margin-top: 6rem;
@@ -254,15 +258,8 @@ background-color: rgba(182, 157, 120, 1);
 }
 
 
-/* ===========CARDS============ */
+/* ==================CARDS================= */
 
-.card {
-  width: fit-content;
-}
-
-.card-body {
-  width: fit-content;
-}
 
 .btn {
   border-radius: 0;
@@ -316,41 +313,9 @@ background-color: rgba(182, 157, 120, 1);
 } 
 
 
-/* MODAL */
-.popup-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.9);
-  height: 100%;
-  width: 100%;
-  z-index: 100;
-  display: none;
-}
+/* ==================BANNER CATALOGO================= */
 
-.popup-image span {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 40px;
-  font-weight: bolder;
-  color: #fff;
-  cursor: pointer;
-  z-index: 100;
-}
 
-.popup-image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 5px solid #fff;
-  border-radius: 5px;
-  width: 650px;
-  object-fit: cover;
-}
-
-/* BANNER CATALOGO */
 .banner__container {
   position: relative;
   display: inline-block;
@@ -389,7 +354,10 @@ background-color: rgba(182, 157, 120, 1);
   text-decoration: none;
 }
 
-/* SERVICIOS */
+
+/* ==================SERVICIOS================= */
+
+
 .servicios__item {
   display: flex;
   padding: 38px 30px 36px 30px;
@@ -425,7 +393,10 @@ div.servicios__icon img {
   color: #000;
 }
 
+
 /* ============CATALOGO============ */
+
+
 .div-catalogo{
   margin-top: 7rem;
 }
@@ -434,7 +405,19 @@ div.servicios__icon img {
   text-align: center;
   padding-bottom: 1rem;
 }
-/* ============FOOTER Y NEWSLETTER============ */
+
+
+/* ==================CONTACTO================= */
+
+
+.section-contacto{
+  margin-top: 5%;
+
+
+}
+/* ==================FOOTER================= */
+
+
 .footer__bg {
   background-image: url(../img/footer-bg.jpeg);
 }
@@ -517,85 +500,41 @@ i {
   text-decoration: none;
 }
 
-.rs-view-btn {
-  margin: 25px 0 0;
-  position: relative;
-}
 
-.rs-view-btn input[type="email"] {
-  border-color: #fff;
-  background: none;
-  border: 2px solid #fff;
-  width: 100%;
-  font-size: 13px;
-  padding: 10px;
-  margin: 0;
-  color: #fff;
+
+
+
+
+/* ==================CONTACTO================= */
+
+
+input[type="submit"] {
+  vertical-align: top;
   height: 60px;
-}
-
-.suscribebtn {
-  position: relative;
-}
-
-.suscribebtn button {
-  position: absolute;
-  background: #fff;
-  border-radius: 0;
-  padding: 0 14px 0 14px;
-  height: 59px;
-  font-size: 0;
-  width: 60px;
-  top: -20px;
-  right: -1px;
-  border: none;
-}
-
-.suscribebtn button i {
-  color: #000;
-}
-
-.row-catalogo {
-  margin: 1rem;
-  padding-top: 25px;
-}
-
-a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.9);
-}
-
-h5 {
-  font-weight: bold;
-}
-
-.btn-contacto {
+  width: 98px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: pink;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
   color: #fff;
-  background-color: #daa056;
-  border-color: #f7eee2;
+  background: linear-gradient(45deg, #faebd7, #497e76);
 }
 
-.btn-contacto:hover {
-  background-color: #f1b96f;
-}
-
-.btn-contacto:hover:active {
-  background-color: #755a37;
+input[type="submit"]:hover {
+  background: linear-gradient(180deg, #faebd7, #497e76);
 }
 
 h3 {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.contact-form {
-  padding-left: 50px;
-  padding-right: 50px;
-}
 
-.contact-map {
-  padding-left: 50px;
-  padding-right: 50px;
-}
+/* ==================NEWSLETTER================= */
+
 
 .newsletter {
   font-family: "Cormorant Garamond", serif;
