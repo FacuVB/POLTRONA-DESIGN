@@ -508,7 +508,7 @@ i {
 /* ==================CONTACTO================= */
 
 
-input[type="submit"] {
+button[type="submit"] {
   vertical-align: top;
   height: 60px;
   width: 98px;
@@ -524,7 +524,7 @@ input[type="submit"] {
   background: linear-gradient(45deg, #faebd7, #497e76);
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   background: linear-gradient(180deg, #faebd7, #497e76);
 }
 
@@ -532,7 +532,13 @@ h3 {
   color: rgba(0, 0, 0, 0.9);
 }
 
+.text-center {
+  background-color: transparent;
+}
 
+#hide-mail{
+  opacity: 0;
+}
 /* ==================NEWSLETTER================= */
 
 
@@ -602,6 +608,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: linear-gradient(180deg, #faebd7, #497e76);
 }
+
+
 
 form #mce-responses {
   display: flex;
