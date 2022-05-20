@@ -551,6 +551,14 @@ h3 {
   background-color: transparent;
 }
 
+.alert-modal{
+  max-width: 25%;
+  top: 20%;
+  left: 0;
+  z-index: 3 ;
+  
+}
+
 /* ==================NEWSLETTER================= */
 
 
