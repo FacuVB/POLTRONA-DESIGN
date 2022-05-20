@@ -63,7 +63,7 @@
                                         <a class="nav-link" href="#">Proyectos</a>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link" href="contacto.html">Contacto</a>
+                                        <a class="nav-link" href="contacto.php">Contacto</a>
                                     </li>
                                 </ul>
                             </div>
