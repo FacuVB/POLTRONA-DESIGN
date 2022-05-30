@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="img/favicomatic/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="img/favicomatic/apple-touch-icon-144x144.png">
     <title>POLTRONA | Contacto</title>
 </head>
 

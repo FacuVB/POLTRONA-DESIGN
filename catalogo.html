@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1941d750e2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/mdb.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
@@ -16,1564 +15,268 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Libre+Franklin:wght@100&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="img/favicomatic/favicon.ico">
-    <title>POLTRONA | Catalogo</title>
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="img/favicomatic/apple-touch-icon-114x114.png">
+    <title>POLTRONA | Banquetas</title>
 </head>
 
 <body>
     <header>
-        <div class="logo__header d-flex justify-content-center pt-3 mb-3">
-            <a href="index.html"><img src="img/logo-header.png" alt=""></a>
-        </div>
-        <div class="nav__header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light pb-3 mb-5">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Catálogo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                            </li>
-                        </ul>
+        <div class="navigation-wrap bg-light start-header start-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-md navbar-light">
+                            <a class="navbar-brand" href="index.html"><img src="img/logo-header.png" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="#">Servicios</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="#">Proyectos</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="contacto.php">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
     </header>
-    <section>
-        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="sillas-tab" data-bs-toggle="tab" data-bs-target="#sillas"
-                    type="button" role="tab" aria-controls="sillas" aria-selected="true">Sillas</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="banquetas-tab" data-bs-toggle="tab" data-bs-target="#banquetas"
-                    type="button" role="tab" aria-controls="banquetas" aria-selected="false">Banquetas</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="sillones-tab" data-bs-toggle="tab" data-bs-target="#sillones"
-                    type="button" role="tab" aria-controls="sillones" aria-selected="false">Sofás</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="poltrona-tab" data-bs-toggle="tab" data-bs-target="#poltrona"
-                    type="button" role="tab" aria-controls="puff" aria-selected="false">Puffs</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="puff-tab" data-bs-toggle="tab" data-bs-target="#puff"
-                    type="button" role="tab" aria-controls="poltrona" aria-selected="false">Poltronas</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="mesasdc-tab" data-bs-toggle="tab" data-bs-target="#mesasdc" type="button"
-                    role="tab" aria-controls="mesasdc" aria-selected="false">Mesas de comedor</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="mesasdce-tab" data-bs-toggle="tab" data-bs-target="#mesasdce" type="button"
-                    role="tab" aria-controls="mesasdce" aria-selected="false">Mesas de centro</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="dressoire-tab" data-bs-toggle="tab" data-bs-target="#dressoire" type="button"
-                    role="tab" aria-controls="dressoire" aria-selected="false">Dressoire</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="mesasdl-tab" data-bs-toggle="tab" data-bs-target="#mesasdl" type="button"
-                    role="tab" aria-controls="mesasdl" aria-selected="false">Mesas de luz</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="complementos-tab" data-bs-toggle="tab" data-bs-target="#complementos"
-                    type="button" role="tab" aria-controls="complementos" aria-selected="false">Complementos</button>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="sillas" role="tabpanel" aria-labelledby="sillas-tab">
-                <div class="row row-catalogo">
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/sillas2/beekman.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Beekman</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas: 0,60 x 0,56 x 0,82h<br>
-                                    Relleno espuma soft. <br>
-                                    Tapizado a elección <br>
-                                    Patas madera paraíso o peteribí lustrado o patinado
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/sillas2/grace.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Grace</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas: 0,58 x 0,60 x 0,82h<br>
-                                    Relleno espuma soft. <br>
-                                    Tapizado a elección <br>
-                                    Patas madera paraíso o peteribí lustrado o patinado
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/sillas2/gio.png" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Gio</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas: 0,54 x 0,55 x 0,79h <br>
-                                    Relleno espuma soft. <br>
-                                    Tapizado a elección con capitoné <br>
-                                    Patas madera paraíso o peteribí lustrado o patinado
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/sillas2/lena.png" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Lena</h5>
-                                <p class="small text-muted mb-4">
-                                    Asiento espuma soft. <br>
-                                    Respaldo esterillado <br>
-                                    Tapizado a elección <br>
-                                    Patas madera paraíso o peteribí lustrado o patinado
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/sillas2/milton.png" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Milton</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas: 0,60 x 0,56 x 0,95h <br>
-                                    Relleno espuma soft. <br>
-                                    Tapizado a elección <br>
-                                    Patas madera paraíso o peteribí lustrado o patinado
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/sillas2/morgan.png" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Morgan</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas: 0,58 x 0,60 x 0,82h <br>
-                                    Relleno espuma soft. <br>
-                                    Tapizado a elección <br>
-                                    Patas madera paraíso o peteribí lustrado o patinado
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img
-                                src="img/catalogo/sillas2/Roma con capitone y voluta.png" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Roma con Capitoné y Voluta</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas: 0,47 x 0,46 x 0,95h <br>
-                                    Relleno espuma soft. <br>
-                                    Tapizado a elección <br>
-                                    Patas madera paraíso o peteribí lustrado o patinado
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/sillas2/Roma doble.png" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Roma Doble</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas: 1,00 x 0,46 x 0,95h <br>
-                                    Relleno espuma soft. <br>
-                                    Tapizado a elección <br>
-                                    Patas madera paraíso o peteribí lustrado o patinado
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/sillas2/Roma.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Roma</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas: 0,47 x 0,46 x 0,95h <br>
-                                    Relleno espuma soft. <br>
-                                    Tapizado a elección <br>
-                                    Patas madera paraíso o peteribí lustrado o patinado
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/sillas2/victoria.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Victoria</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas: 0,55 x 0,60 x 1,00h <br>
-                                    Relleno espuma soft. <br>
-                                    Tapizado a elección <br>
-                                    Patas madera paraíso o peteribí lustrado o patinado
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
+
+    <section class="maim-section">
+        <div class="container-fluid catalogo-container">
+            <div class="div-title-section">
+                <h2 class="text-center mb-5">CATÁLOGO</h2>
+            </div>
+            <div class="row row-catalogo justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/sillon.png" alt="">
+                        <div class="overlay">
+                            <h2>Sofás</h2>
+                            <p>
+                                <a href="sofás.html">VER</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="banquetas" role="tabpanel" aria-labelledby="banquetas-tab">
-                <div class="row row-catalogo">
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/DSC_5721-Editar-copia.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesas de costado Pop 2 en 1</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img
-                                src="img/catalogo/mesas/Mesas-de-costado-Raster-2.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesas de costado Raster 2 en 1</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/R_BAJA_CONVERSE.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa de centro Converse</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/R_COSTADO_CONVERSE.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa de costado Converse</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/R_COSTADO_SPIDER.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa de costado Spider</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img
-                                src="img/catalogo/mesas/R_Mesa-baja-Heston-O_01.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa baja Heston redonda con base de acero</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/R_mesa-baja-malmo-b.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa baja Malmo con base de acero</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/R_Mesa-cosado-Malmo_01.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa de costado Malmo con base de acero</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/poltrona.png" alt="">
+                        <div class="overlay">
+                            <h2>Poltronas</h2>
+                            <p>
+                                <a href="poltronas.html">VER</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="sillones" role="tabpanel" aria-labelledby="sillones-tab">
-                <div class="row row-catalogo">
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/DSC_5721-Editar-copia.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesas de costado Pop 2 en 1</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img
-                                src="img/catalogo/mesas/Mesas-de-costado-Raster-2.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesas de costado Raster 2 en 1</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/R_BAJA_CONVERSE.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa de centro Converse</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/R_COSTADO_CONVERSE.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa de costado Converse</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/R_COSTADO_SPIDER.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa de costado Spider</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img
-                                src="img/catalogo/mesas/R_Mesa-baja-Heston-O_01.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa baja Heston redonda con base de acero</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/R_mesa-baja-malmo-b.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa baja Malmo con base de acero</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/mesas/R_Mesa-cosado-Malmo_01.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Mesa de costado Malmo con base de acero</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/sillas.png" alt="">
+                        <div class="overlay">
+                            <h2>Sillas</h2>
+                            <p>
+                                <a href="sillas.html">VER</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="poltrona" role="tabpanel" aria-labelledby="poltrona-tab">
-                <div class="row row-catalogo">
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/bayus.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Bayus</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm pt-"><img src="img/catalogo/Mesas comedor/Celine.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Celine</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,00 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/Pacamara.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Pacamara</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/circle.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Circle</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,10 x 2,70 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/florence.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Florence</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/james.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>James</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,20 x 2,60 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston madera.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Madera</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p> <br>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston cemento.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Cemento</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Tapa de cemento <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/ziggy.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Ziggy</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 0,90 x 1,70 - 1,00 x 2,00 - 1,20 x 2,50 <br>
-                                    Tapa de mármol Royal blanco <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/banquetas.png" alt="">
+                        <div class="overlay">
+                            <h2>Banquetas</h2>
+                            <p>
+                                <a href="banquetas.html">VER</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="puff" role="tabpanel" aria-labelledby="puff-tab">
-                <div class="row row-catalogo">
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/bayus.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Bayus</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm pt-"><img src="img/catalogo/Mesas comedor/Celine.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Celine</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,00 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/Pacamara.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Pacamara</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/circle.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Circle</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,10 x 2,70 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/florence.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Florence</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/james.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>James</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,20 x 2,60 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston madera.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Madera</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p> <br>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston cemento.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Cemento</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Tapa de cemento <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/ziggy.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Ziggy</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 0,90 x 1,70 - 1,00 x 2,00 - 1,20 x 2,50 <br>
-                                    Tapa de mármol Royal blanco <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/puff.png" alt="">
+                        <div class="overlay">
+                            <h2>Puffs</h2>
+                            <p>
+                                <a href="puffs.html">VER</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="mesasdc" role="tabpanel" aria-labelledby="mesasdc-tab">
-                <div class="row row-catalogo">
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/bayus.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Bayus</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm pt-"><img src="img/catalogo/Mesas comedor/Celine.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Celine</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,00 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/Pacamara.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Pacamara</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/circle.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Circle</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,10 x 2,70 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/florence.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Florence</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/james.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>James</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,20 x 2,60 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston madera.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Madera</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p> <br>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston cemento.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Cemento</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Tapa de cemento <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/ziggy.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Ziggy</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 0,90 x 1,70 - 1,00 x 2,00 - 1,20 x 2,50 <br>
-                                    Tapa de mármol Royal blanco <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/silla escritorio.png" alt="">
+                        <div class="overlay">
+                            <h2>Sillas de
+                                escritorio</h2>
+                            <p>
+                                <a href="sillas-de-escritorio.html">VER</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="mesasdce" role="tabpanel" aria-labelledby="mesasdce-tab">
-                <div class="row row-catalogo">
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/bayus.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Bayus</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm pt-"><img src="img/catalogo/Mesas comedor/Celine.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Celine</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,00 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/Pacamara.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Pacamara</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/circle.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Circle</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,10 x 2,70 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/florence.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Florence</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/james.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>James</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,20 x 2,60 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston madera.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Madera</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p> <br>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston cemento.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Cemento</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Tapa de cemento <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/ziggy.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Ziggy</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 0,90 x 1,70 - 1,00 x 2,00 - 1,20 x 2,50 <br>
-                                    Tapa de mármol Royal blanco <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/comedor.png" alt="">
+                        <div class="overlay">
+                            <h2>Mesas de comedor</h2>
+                            <p>
+                                <a href="mesas-de-comedor.html">VER</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="dressoire" role="tabpanel" aria-labelledby="dressoire-tab">
-                <div class="row row-catalogo">
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/bayus.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Bayus</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm pt-"><img src="img/catalogo/Mesas comedor/Celine.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Celine</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,00 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/Pacamara.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Pacamara</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/circle.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Circle</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,10 x 2,70 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/florence.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Florence</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/james.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>James</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,20 x 2,60 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston madera.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Madera</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p> <br>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston cemento.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Cemento</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Tapa de cemento <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/ziggy.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Ziggy</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 0,90 x 1,70 - 1,00 x 2,00 - 1,20 x 2,50 <br>
-                                    Tapa de mármol Royal blanco <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/centro.png" alt="">
+                        <div class="overlay">
+                            <h2>Mesas de centro</h2>
+                            <p>
+                                <a href="mesas-de-centro.html">VER</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="mesasdl" role="tabpanel" aria-labelledby="mesasdl-tab">
-                <div class="row row-catalogo">
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/bayus.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Bayus</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm pt-"><img src="img/catalogo/Mesas comedor/Celine.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Celine</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,00 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/Pacamara.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Pacamara</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,00 x 2,10 - 1,20 x 2,55 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/circle.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Circle</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,10 x 2,70 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/florence.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Florence</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 x 0,77 - 1,20 x 2,60 x 0,77 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/james.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>James</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 1,05 x 2,20 - 1,20 x 2,60 <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston madera.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Madera</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Madera paraíso o petiribi. <br>
-                                    Terminación lustrado o pátina a elección</p> <br>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/heston cemento.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Heston Cemento</h5>
-                                <p class="small text-muted mb-4">
-                                    Medida disponible: 1,30 diam <br>
-                                    Tapa de cemento <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección.
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/Mesas comedor/ziggy.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Ziggy</h5>
-                                <p class="small text-muted mb-4">
-                                    Medidas disponibles: 0,90 x 1,70 - 1,00 x 2,00 - 1,20 x 2,50 <br>
-                                    Tapa de mármol Royal blanco <br>
-                                    Madera paraíso o petiribi <br>
-                                    Terminación lustrado o pátina a elección
-                                </p>
-                                <div class="btn-producto">
-                                    <a href="#" class="btn btn-primary">CONSULTAR</a>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/dressoires.png" alt="">
+                        <div class="overlay">
+                            <h2>Dressoires</h2>
+                            <p>
+                                <a href="dressoires.html">VER</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="complementos" role="tabpanel" aria-labelledby="complementos-tab">
-                <div class="row row-catalogo">
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img
-                                src="img/catalogo/complementos/33.-Espejo-James.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Espejo James I</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/escritorio.png" alt="">
+                        <div class="overlay">
+                            <h2>Escritorios</h2>
+                            <p>
+                                <a href="escritorios.html">VER</a>
+                            </p>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/complementos/HESTON_02.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Espejo Heston II</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/rack tv.png" alt="">
+                        <div class="overlay">
+                            <h2>Racks de TV</h2>
+                            <p>
+                                <a href="racks-de-tv.html">VER</a>
+                            </p>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img src="img/catalogo/complementos/MORGAN_REDONDO.jpg"
-                                alt="" class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Espejo Morgan</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/biblioteca.png" alt="">
+                        <div class="overlay">
+                            <h2>Bibliotecas</h2>
+                            <p>
+                                <a href="bibliotecas.html">VER</a>
+                            </p>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img
-                                src="img/catalogo/complementos/Dressoire-Heston-1.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Dressoire Heston I</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/vajillero.png" alt="">
+                        <div class="overlay">
+                            <h2>Vajilleros</h2>
+                            <p>
+                                <a href="vajilleros.html">VER</a>
+                            </p>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img
-                                src="img/catalogo/complementos/Dressoire-Rosso-1.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Dressoire Rosso</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/luz.png" alt="">
+                        <div class="overlay">
+                            <h2>Mesas de luz</h2>
+                            <p>
+                                <a href="mesas-de-luz.html">VER</a>
+                            </p>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img
-                                src="img/catalogo/complementos/Dressoire-Studio_OK.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Dressoire Studio</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img
-                                src="img/catalogo/complementos/Dressoire-Ziggy-1.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Dressoire Ziggy</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm"><img
-                                src="img/catalogo/complementos/dressoire_bayus_01.jpg" alt=""
-                                class="img-fluid card-img-top">
-                            <div class="p-4">
-                                <h5>Dressoire Bayus</h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit</p>
-                                <div>
-                                    <a class="link-catalogo" href="">VER +</a>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 mb-4 card-catalogo">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/catalogo/respaldos.png" alt="">
+                        <div class="overlay">
+                            <h2>Respaldos</h2>
+                            <p>
+                                <a href="respaldos.html">VER</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer__bg">
-        <div class="footer__top">
-            <div class="container-fluid2">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 md-mb-10">
-                        <div class="footer__logo mb-40">
-                            <a href="index.html"><img src="img/footer-logo.png" alt=""></a>
-                        </div>
-                        <ul class="footer__social md-mb-30">
-                            <li>
-                                <a href="#" target="_blank">
-                                    <span>
-                                        <i class="fa-brands fa-facebook"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <span>
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <span>
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <span>
-                                        <i class="fa-brands fa-linkedin"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10">
-                        <h3 class="footer__title">CONTACTO</h3>
-                        <ul class="footer__address">
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <div class="dir">
-                                    Rufino Ortega 600
-                                    <br>
-                                    Ciudad de Mendoza
-                                    <br>
-                                    Mendoza
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-headset"></i>
-                                <div class="dir">
-                                    <a href="tel:(+549)02614201087)">02614201087</a>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-at"></i>
-                                <div class="dir">
-                                    <a href="mailto:laliflor9.93@gmail.com">laliflor9.93@gmail.com</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10 pl-55 md-pl-15">
-                        <h3 class="footer__title">Menu</h3>
-                        <ul class="site-map">
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Catálogo</a>
-                            </li>
-                            <li>
-                                <a href="#">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+
+
+    <footer class="footer-07">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <img class="footer-heading" src="img/footer-logo.png" alt="">
+                    <p class="menu">
+                        <a href="#">Home</a>
+                        <a href="#">Catálogo</a>
+                        <a href="#">Servicios</a>
+                        <a href="#">Proyectos</a>
+                        <a href="#">Contacto</a>
+                    </p>
+                    <ul class="ftco-footer-social p-0">
+                        <li><a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" title="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> Poltrona
+                        <!-- <a href="#" target="_blank"></a> -->
                 </div>
             </div>
         </div>
     </footer>
-    <script src="js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
-    <script src="js/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
