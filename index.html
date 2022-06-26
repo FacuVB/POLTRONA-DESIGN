@@ -21,10 +21,9 @@
 </head>
 
 <body>
-    <a href="https://api.whatsapp.com/send?phone=2615869398" class="btn-wsp" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=123456789" class="btn-wsp" target="_blank">
         <i class="fa fa-whatsapp icono"></i>
     </a>
-
     <header>
         <div class="navigation-wrap bg-light start-header start-style">
             <div class="container">
@@ -46,10 +45,10 @@
                                         <a class="nav-link" href="catalogo.html">Catálogo</a>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link" href="#">Servicios</a>
+                                        <a class="nav-link" href="servicios.html">Servicios</a>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link" href="#">Proyectos</a>
+                                        <a class="nav-link" href="proyectos.html">Proyectos</a>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                         <a class="nav-link" href="contacto.php">Contacto</a>
@@ -63,7 +62,7 @@
         </div>
     </header>
     <section class="container-fluid pb-3 mb-5 section-slider">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel data-interval="false"">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -71,10 +70,8 @@
             </ol>
             <div class="carousel-inner rounded-lg">
                 <div class="carousel-item active">
-                    <img src="img/SLIDER1.png" class="d-block w-100v img-fluid" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 class="h2-slider1">ARQUITECTURA</h2>
-                    </div>
+                    <img src="img/Rufino Ortega.jpg" class="d-block w-100v img-fluid" alt="...">
+                   
                 </div>
                 <div class="carousel-item">
                     <img src="img/SLIDER2.png" class="d-block w-100 img-fluid" alt="...">
@@ -106,14 +103,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="container-fluid bg-overlay text-center">
-                        <div class="row d-flex justify-content-center">
-                            <div class="text-center text-banner">
-                                <h1>MUEBLES EN STOCK</h1>
-                                <h4>Tocá la imagen y conocé todos los productos</h4>
+                    <a href="stock.html" class="banner-stock">
+                        <div class="container-fluid bg-overlay text-center">
+                            <div class="row d-flex justify-content-center">
+                                <div class="text-center text-banner">
+                                    <h1>MUEBLES EN STOCK</h1>
+                                    <h4>Tocá la imagen y conocé todos los productos</h4>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-6 container-fluid">
                     <div class="carousel slide" id="carousel-102729">
@@ -169,7 +168,7 @@
     <section>
         <div class="container-fluid pb-2 mb-1">
             <div class="row justify-content center banner__container">
-                <img class="img-fluid" src="img/BANNER.png" alt="">
+                <img class="img-fluid" src="img/BANNER_.jpg" alt="">
                 <!-- <div class="text1">Visite nuestro catálogo</div>
                 <div class="text2">Reciba un catálogo mensual gratuito que <br> muestra lo mejor de nuestros diseños!
                 </div>
@@ -195,15 +194,9 @@
                             <h5 class="card-title">GAEL REDONDO</h5>
                             <h6 class="card-subtitle mb-2 text-muted ">PUFFS</h6>
                             <p class="card-text">
-                            <ul>
-                                <li>Módulos medidas disponibles: 0,32 x 0,40</li>
-                                <li>Tapizado de piel.</li>
-                                <li>Patas metálicas doradas.</li>
-                                <li>Relleno de espuma soft.</li>
-                            </ul>
                             </p>
                             <div>
-                                <a href="#" class="myButton">VER +</a>
+                                <a href="items/puffs/Gael_redondo.html" class="myButton">VER +</a>
                             </div>
                         </div>
                     </div>
@@ -213,17 +206,12 @@
                         <img src="img/catalogo/Mesas comedor/bayus.jpg"
                             class="card-img-top card__producto image img-fluid" id="photo" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">CELINE</h5>
+                            <h5 class="card-title">BAYUS</h5>
                             <h6 class="card-subtitle mb-2 text-muted ">MESAS DE COMEDOR</h6>
                             <p class="card-text">
-                            <ul>
-                                <li>Medidas disponibles: 1,00 x 2,00 x 0,77 - 1,20 x 2,60 x 0,77</li>
-                                <li>Madera paraíso o petiribi.</li>
-                                <li>Terminación lustrado o pátina a elección.</li>
-                            </ul>
                             </p>
                             <div>
-                                <a href="#" class="myButton">VER +</a>
+                                <a href="items/mesas_de_comedor/Bayus.html" class="myButton">VER +</a>
                             </div>
                         </div>
                     </div>
@@ -236,14 +224,9 @@
                             <h5 class="card-title">ZIGGY</h5>
                             <h6 class="card-subtitle mb-2 text-muted ">POLTRONAS</h6>
                             <p class="card-text">
-                            <ul>
-                                <li>Medidas: 0,75 x 0,64 x 0,74h</li>
-                                <li>Relleno espuma soft.</li>
-                                <li>Estructura madera paraíso o peteribí lustrado o patinado.</li>                           
-                            </ul>
                             </p>
                             <div>
-                                <a href="#" class="myButton">VER +</a>
+                                <a href="items/poltronas/Ziggy.html" class="myButton">VER +</a>
                             </div>
                         </div>
                     </div>
@@ -341,6 +324,42 @@
     <hr>
 
     <section>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img alt="Bootstrap Image Preview" src="img/van-truck.png" />
+                    <h2>
+                        ENVIOS
+                    </h2>
+                    <p>
+                        Realizamos envios a todo el pais.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img alt="Bootstrap Image Preview" src="img/credit-card.png" />
+                    <h2>
+                        TARJETAS DE CREDITO
+                    </h2>
+                    <p>
+                        3, 6 y 12 cuotas sin interes todos los dias.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img alt="Bootstrap Image Preview" src="img/mobile-phone.png" />
+                    <h2>
+                        CONSULTAS
+                    </h2>
+                    <p>
+                        Por Whatsapp para una atencion personalizada.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
         <div class="jumbotron text-center imgJumbotron">
             <div class="itemsNewsletter">
                 <h2 class="display-4 newsletter">NEWSLETTER</h2>
@@ -383,15 +402,13 @@
                     <p class="menu">
                         <a href="index.html">Home</a>
                         <a href="catalogo.html">Catálogo</a>
-                        <a href="#">Servicios</a>
-                        <a href="#">Proyectos</a>
+                        <a href="servicios.html">Servicios</a>
+                        <a href="proyectos.html">Proyectos</a>
                         <a href="catalogo.html">Contacto</a>
                     </p>
                     <ul class="ftco-footer-social p-0">
-                        <li><a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#" title="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/poltronainteriores/" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/poltronainteriores/" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -434,9 +451,7 @@
                 min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
             });
         }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
-    <script src="js/app.js"></script>
-    <script src="js/sweetalert2.all.min.js">
-    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -446,6 +461,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+        <script src="js/sweetalert2.all.min.js">
+        </script>
 </body>
 
 </html>

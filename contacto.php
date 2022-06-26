@@ -31,36 +31,19 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto py-4 py-md-0">
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                         <a class="nav-link" href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Catálogo</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="sofás.html">Sofás</a>
-                                            <a class="dropdown-item" href="poltronas.html">Poltronas</a>
-                                            <a class="dropdown-item" href="sillas.html">Sillas</a>
-                                            <a class="dropdown-item" href="banquetas.html">Banquetas</a>
-                                            <a class="dropdown-item" href="puffs.html">Puffs</a>
-                                            <a class="dropdown-item" href="sillas-de-escritorio.html">Sillas de
-                                                escritorio</a>
-                                            <a class="dropdown-item" href="mesas-de-comedor.html">Mesas de comedor</a>
-                                            <a class="dropdown-item" href="mesas-de-centro.html">Mesas de centro</a>
-                                            <a class="dropdown-item" href="dressoires.html">Dressoires</a>
-                                            <a class="dropdown-item" href="escritorios.html">Escritorios</a>
-                                            <a class="dropdown-item" href="racks-de-tv.html">Racks de TV</a>
-                                            <a class="dropdown-item" href="bibliotecas.html">Bibliotecas</a>
-                                            <a class="dropdown-item" href="vajilleros.html">Vajilleros</a>
-                                            <a class="dropdown-item" href="mesas-de-luz.html">Mesas de luz</a>
-                                            <a class="dropdown-item" href="respaldos.html">Respaldoss</a>
-                                        </div>
+                                        <a class="nav-link" href="catalogo.html">Catálogo</a>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link" href="#">Servicios</a>
+                                        <a class="nav-link" href="servicios.html">Servicios</a>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link" href="#">Proyectos</a>
+                                        <a class="nav-link" href="proyectos.html">Proyectos</a>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                         <a class="nav-link" href="contacto.php">Contacto</a>
@@ -133,86 +116,31 @@
             </div>
         </div>
     </section>
-    <footer class="footer__bg">
-        <div class="footer__top">
-            <div class="container-fluid2">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 md-mb-10">
-                        <div class="footer__logo mb-40">
-                            <a href="index.html"><img src="img/footer-logo.png" alt=""></a>
-                        </div>
-                        <ul class="footer__social md-mb-30">
-                            <li>
-                                <a href="#" target="_blank">
-                                    <span>
-                                        <i class="fa-brands fa-facebook"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <span>
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <span>
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <span>
-                                        <i class="fa-brands fa-linkedin"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10">
-                        <h3 class="footer__title">CONTACTO</h3>
-                        <ul class="footer__address">
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <div class="dir">
-                                    Rufino Ortega 600
-                                    <br>
-                                    Ciudad de Mendoza
-                                    <br>
-                                    Mendoza
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-headset"></i>
-                                <div class="dir">
-                                    <a href="tel:(+549)02614201087)">02614201087</a>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-at"></i>
-                                <div class="dir">
-                                    <a href="mailto:laliflor9.93@gmail.com">laliflor9.93@gmail.com</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10 pl-55 md-pl-15">
-                        <h3 class="footer__title">Menu</h3>
-                        <ul class="site-map">
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Catálogo</a>
-                            </li>
-                            <li>
-                                <a href="#">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+    <footer class="footer-07">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <img class="footer-heading" src="img/footer-logo.png" alt="">
+                    <p class="menu">
+                        <a href="index.html">Home</a>
+                        <a href="catalogo.html">Catálogo</a>
+                        <a href="servicios.html">Servicios</a>
+                        <a href="proyectos.html">Proyectos</a>
+                        <a href="contacto.php">Contacto</a>
+                    </p>
+                    <ul class="ftco-footer-social p-0">
+                    <li><a href="https://www.facebook.com/poltronainteriores/" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/poltronainteriores/" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> Poltrona
+                        <!-- <a href="#" target="_blank"></a> -->
                 </div>
             </div>
         </div>

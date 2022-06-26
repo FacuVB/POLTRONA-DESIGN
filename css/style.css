@@ -141,7 +141,7 @@ body {
 }
 .nav-link {
   position: relative;
-  padding: 5px 0 !important;
+  padding: 5px 0;
   display: inline-block;
 }
 .nav-item:after {
@@ -258,6 +258,10 @@ body {
   color: #ffff;
 }
 
+
+
+
+
 /* ==================BANNER STOCK================= */
 .bg-overlay {
   background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("../img/banner-stock.jpg");
@@ -304,13 +308,36 @@ background-repeat: no-repeat;
   background-size: auto;
   background-position: center center;
 }
+
+.banner-stock:hover{
+  text-decoration: none;
+}
+
+/* ==================STOCK SECTION============= */
+
+.stock-nav-item{
+  padding-left: 10%;
+  padding-right: 10%;
+  width: max-content;
+}
+
+.stock-nav{
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
 /* ==================SECTIONS================= */
 
 .div-title-section {
   margin-top: 10%;
 }
 
-/* ==================CARDS================= */
+.tilte-section{
+  font-size: 50px;
+}
+
+/* ==================CARDS=================== */
 
 /* .btn-banner {
   border-radius: 0;
@@ -382,6 +409,7 @@ background-repeat: no-repeat;
 }
 .text-center {
   background-color: #eeeeee;
+  
 }
 .card__producto {
   height: 348px;
@@ -485,9 +513,17 @@ div.servicios__icon img {
   text-decoration: none;
 }
 
+/* ============TELAS CATALOGO============ */
 
-/* ============CATALOGO============ */
+li.telas-tabs{
+  margin-right: 1%;
+}
 
+a.telas-item{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* ==============CATALOGO================ */
 
 .catalogo-container {
   margin-top: 10%;
@@ -890,6 +926,7 @@ form #mce-success-response {
 }
 
 /* ==================WHATSAPP================= */
+
 .btn-wsp {
   position: fixed;
   width: 60px;
@@ -911,7 +948,80 @@ form #mce-success-response {
   color: #fff;
 }
 
+/* ==================PROYECTOS================= */
+
+.div-proyecto{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.title-proyecto{
+  font-size: 60px;
+}
+
+.subtitle-proyecto{
+  font-size: 20px;
+}
+
+.portfolio-item{
+	/*width:100%;*/
+}
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+
+.div-proyectos{
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.img-proyecto{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  object-position: center center;
+}
+
+
+/* ==================SERVICIOS=================== */
+
+.div-servicios{
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+  padding-right: 0;
+padding-left: 0;
+}
+
+.img-servicios{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  object-position: center center;
+}
+
+.bg-section{
+  background-color: #3a3a3a;
+}
+
+.bg-section-titulo{
+color: #faf7f2 ;
+}
+
+.bg-section-2{
+  background-color: #faf7f2;
+  
+}
+
+.bg-section-titulo-2{
+  color: #3a3a3a;
+  }
+
 /* ==================MEDIA QUERY================= */
+
 @media only screen and (max-width: 600px) {
   .text1 {
     top: -12px;
